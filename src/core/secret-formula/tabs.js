@@ -186,7 +186,7 @@ export const tabs = [
         component: "AutobuyersTab",
         id: 0,
         hidable: true,
-      },
+      },/*
       {
         key: "automator",
         name: "Automator",
@@ -195,7 +195,7 @@ export const tabs = [
         condition: () => PlayerProgress.realityUnlocked(),
         id: 1,
         hidable: true,
-      },
+      },*/
     ]
   },
   {
@@ -494,6 +494,35 @@ export const tabs = [
         component: "ShopTab",
         id: 0,
         hidable: true
+      }
+    ]
+  },
+  {
+    key: "automator",
+    name: "Automator",
+    symbol: "<i class='fas fa-code'></i>",
+    component: "AutomatorTab",
+    id: 11,
+    hidable: false,
+    subtabs: [
+      {
+        key: "automator",
+        name: "Automator",
+        symbol: "<i class='fas fa-code'></i>",
+        component: "AutomatorTab",
+        id: 0,
+        hidable: false,
+      },
+      {
+        key: "unlocks",
+        name: "Unlocks",
+        symbol: "+",
+        component: null,
+        id: 1,
+        hidable: true,
+      }
+    ]
+  },
       }
     ]
   }
