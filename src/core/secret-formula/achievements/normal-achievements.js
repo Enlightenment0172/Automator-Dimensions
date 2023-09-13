@@ -1031,8 +1031,8 @@ export const normalAchievements = [
   {
     id: 142,
     name: "How does this work?",
-    description: "Unlock the automator.",
-    checkRequirement: () => Player.automatorUnlocked,
+    description: "Have at least 100 Automator Points.",
+    checkRequirement: () => Player.automatorUnlocked, //todo revise
     checkEvent: [GAME_EVENT.REALITY_RESET_AFTER, GAME_EVENT.REALITY_UPGRADE_BOUGHT, GAME_EVENT.PERK_BOUGHT,
       GAME_EVENT.BLACK_HOLE_UNLOCKED],
     get reward() { return `Dimension Boosts are ${formatPercents(0.5)} stronger.`; },
