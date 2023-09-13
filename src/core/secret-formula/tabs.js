@@ -187,15 +187,6 @@ export const tabs = [
         id: 0,
         hidable: true,
       },
-      {
-        key: "automator",
-        name: "Automator",
-        symbol: "<i class='fas fa-code'></i>",
-        component: "AutomatorTab",
-        condition: () => PlayerProgress.realityUnlocked(),
-        id: 1,
-        hidable: true,
-      },
     ]
   },
   {
@@ -495,6 +486,49 @@ export const tabs = [
         id: 0,
         hidable: true
       }
+    ]
+  },
+  {
+    key: "automator",
+    name: "Automator",
+    newUIClass: "automator",
+    hideAt: 1.5,
+    id: 11,
+    hidable: true,
+    subtabs: [
+      {
+        key: "automator",
+        name: "Automator",
+        symbol: "<i class='fas fa-code'></i>",
+        component: "AutomatorTab",
+        id: 0,
+        hidable: true,
+      },
+      {
+        key: "upgrades",
+        name: "Automator Upgrades",
+        symbol: "<i class='fas fa-arrow-up'></i>",
+        component: "AutomatorUpgradesTab",
+        id: 1,
+        hidable: true,
+      },
+      {
+        key: "milestones",
+        name: "Milestones",
+        symbol: "<i class='fas fa-star'></i>",
+        component: "AutomatorMilestoneTab",
+        id: 2,
+        hidable: true,
+      },
+      {
+        key: "points",
+        name: "Automator Points",
+        symbol: "¦",
+        component: "AutomatorPointsTab",
+        id: 3,
+        condition: () => PlayerProgress.realityUnlocked(),
+        hidable: true,
+      },
     ]
   }
 ];
